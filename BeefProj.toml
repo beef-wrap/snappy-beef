@@ -1,0 +1,12 @@
+FileVersion = 1
+
+[Project]
+Name = "snappy-beef"
+DefaultNamespace = "snappy"
+
+[Configs.Debug.Win64]
+CLibType = "DynamicDebug"
+LibPaths = ["$(ProjectDir)\\libs\\debug\\snappy.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\release\\snappy.lib"]
