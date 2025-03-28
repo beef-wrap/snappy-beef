@@ -44,7 +44,8 @@ public static class snappy
     * Return values; see the documentation for each function to know
     * what each can return.
     */
-    public enum snappy_status {
+    public enum snappy_status  : c_int
+    {
         SNAPPY_OK = 0,
         SNAPPY_INVALID_INPUT = 1,
         SNAPPY_BUFFER_TOO_SMALL = 2
